@@ -4,6 +4,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
 target 'imgur' do
+pod 'AFNetworking'
 pod 'SDWebImage'
 end
 
