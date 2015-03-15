@@ -6,6 +6,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 target 'imgur' do
 pod 'AFNetworking'
 pod 'SDWebImage'
+pod 'JBSpacer'
 end
 
 target 'imgurTests' do

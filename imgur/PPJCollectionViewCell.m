@@ -17,6 +17,8 @@
     if (!self) {
         return nil;
     }
+    NSLog(@"point: %@", NSStringFromCGPoint(frame.origin));
+    NSLog(@"size: %@", NSStringFromCGSize(frame.size));
     
     self.cellImageView = [[UIImageView alloc]
                       initWithFrame:CGRectInset(CGRectMake(0, 0,
@@ -28,11 +30,23 @@
                 UIViewAutoresizingFlexibleHeight |
                 UIViewAutoresizingFlexibleWidth;
     
-    [self.contentView addSubview:self.cellImageView];
-    
-    self.backgroundColor = [UIColor redColor];
     
     return self;
+}
+
+- (void) layoutSubviews
+{
+    CGRect frame = self.frame;
+    self.cellImageView = [[UIImageView alloc]
+                          initWithFrame:CGRectInset(CGRectMake(0, 0,
+                                                               CGRectGetWidth(frame),
+                                                               CGRectGetHeight(frame)),
+                                                    5, 5)];
+    
+    self.cellImageView.autoresizingMask =
+    UIViewAutoresizingFlexibleHeight |
+    UIViewAutoresizingFlexibleWidth;
+    
 }
 
 @end

@@ -17,7 +17,6 @@
 		9F5097DE1AB348B60073E4BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5097DC1AB348B60073E4BA /* LaunchScreen.xib */; };
 		9F5097EA1AB348B60073E4BA /* imgurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5097E91AB348B60073E4BA /* imgurTests.m */; };
 		9F7F33881AB48C26005A87C6 /* PPJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F33871AB48C26005A87C6 /* PPJCollectionViewCell.m */; };
-		9F7F338B1AB48DF4005A87C6 /* PPJCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F338A1AB48DF4005A87C6 /* PPJCollectionViewLayout.m */; };
 		9F7F338D1AB49192005A87C6 /* icon_683_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F338C1AB49192005A87C6 /* icon_683_1.png */; };
 		9FF0E5D91AB3710E0008B6BC /* ImgurGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0E5D81AB3710E0008B6BC /* ImgurGallery.m */; };
 /* End PBXBuildFile section */
@@ -52,8 +51,6 @@
 		9F5097E91AB348B60073E4BA /* imgurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurTests.m; sourceTree = "<group>"; };
 		9F7F33861AB48C26005A87C6 /* PPJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJCollectionViewCell.h; sourceTree = "<group>"; };
 		9F7F33871AB48C26005A87C6 /* PPJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPJCollectionViewCell.m; sourceTree = "<group>"; };
-		9F7F33891AB48DF4005A87C6 /* PPJCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJCollectionViewLayout.h; sourceTree = "<group>"; };
-		9F7F338A1AB48DF4005A87C6 /* PPJCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPJCollectionViewLayout.m; sourceTree = "<group>"; };
 		9F7F338C1AB49192005A87C6 /* icon_683_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_683_1.png; sourceTree = "<group>"; };
 		9FF0E5D71AB3710E0008B6BC /* ImgurGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurGallery.h; sourceTree = "<group>"; };
 		9FF0E5D81AB3710E0008B6BC /* ImgurGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurGallery.m; sourceTree = "<group>"; };
@@ -158,8 +155,6 @@
 			children = (
 				9F7F33861AB48C26005A87C6 /* PPJCollectionViewCell.h */,
 				9F7F33871AB48C26005A87C6 /* PPJCollectionViewCell.m */,
-				9F7F33891AB48DF4005A87C6 /* PPJCollectionViewLayout.h */,
-				9F7F338A1AB48DF4005A87C6 /* PPJCollectionViewLayout.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -323,7 +318,6 @@
 				9F5097D61AB348B60073E4BA /* SecondViewController.m in Sources */,
 				9F5097D01AB348B60073E4BA /* AppDelegate.m in Sources */,
 				9F5097D31AB348B60073E4BA /* FirstViewController.m in Sources */,
-				9F7F338B1AB48DF4005A87C6 /* PPJCollectionViewLayout.m in Sources */,
 				9F5097CD1AB348B60073E4BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
