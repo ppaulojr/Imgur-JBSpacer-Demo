@@ -17,18 +17,15 @@
     if (!self) {
         return nil;
     }
-    NSLog(@"point: %@", NSStringFromCGPoint(frame.origin));
-    NSLog(@"size: %@", NSStringFromCGSize(frame.size));
     
-    self.cellImageView = [[UIImageView alloc]
-                      initWithFrame:CGRectInset(CGRectMake(0, 0,
-                                                           CGRectGetWidth(frame),
-                                                           CGRectGetHeight(frame)),
-                                                5, 5)];
+    [self.cellImageView setFrame: CGRectInset(CGRectMake(0, 0,
+                                                         CGRectGetWidth(frame),
+                                                         CGRectGetHeight(frame)),
+                                              2, 2)];
     
     self.cellImageView.autoresizingMask =
-                UIViewAutoresizingFlexibleHeight |
-                UIViewAutoresizingFlexibleWidth;
+    UIViewAutoresizingFlexibleHeight |
+    UIViewAutoresizingFlexibleWidth;
     
     
     return self;
@@ -37,16 +34,14 @@
 - (void) layoutSubviews
 {
     CGRect frame = self.frame;
-    self.cellImageView = [[UIImageView alloc]
-                          initWithFrame:CGRectInset(CGRectMake(0, 0,
-                                                               CGRectGetWidth(frame),
-                                                               CGRectGetHeight(frame)),
-                                                    5, 5)];
+    [self.cellImageView setFrame: CGRectInset(CGRectMake(0, 0,
+                                              CGRectGetWidth(frame),
+                                              CGRectGetHeight(frame)),
+                                                    2, 2)];
     
     self.cellImageView.autoresizingMask =
     UIViewAutoresizingFlexibleHeight |
     UIViewAutoresizingFlexibleWidth;
-    
 }
 
 @end

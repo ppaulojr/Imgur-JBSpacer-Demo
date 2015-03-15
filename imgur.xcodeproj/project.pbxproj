@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		85294AD67A77AE5CE05F62A9 /* libPods-imgur.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6990DAF87CE5D5CE63EE0318 /* libPods-imgur.a */; };
+		9F0BD05C1AB631B60072CD25 /* ImgurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BD05B1AB631B60072CD25 /* ImgurImage.m */; };
+		9F0BD05D1AB631B60072CD25 /* ImgurImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0BD05B1AB631B60072CD25 /* ImgurImage.m */; };
 		9F5097CD1AB348B60073E4BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5097CC1AB348B60073E4BA /* main.m */; };
 		9F5097D01AB348B60073E4BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5097CF1AB348B60073E4BA /* AppDelegate.m */; };
 		9F5097D31AB348B60073E4BA /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5097D21AB348B60073E4BA /* FirstViewController.m */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		566F2DC6A4744247827CCF74 /* Pods-imgur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imgur/Pods-imgur.debug.xcconfig"; sourceTree = "<group>"; };
 		6990DAF87CE5D5CE63EE0318 /* libPods-imgur.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-imgur.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0BD05A1AB631B60072CD25 /* ImgurImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurImage.h; sourceTree = "<group>"; };
+		9F0BD05B1AB631B60072CD25 /* ImgurImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurImage.m; sourceTree = "<group>"; };
 		9F5097C71AB348B60073E4BA /* imgur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imgur.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5097CB1AB348B60073E4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F5097CC1AB348B60073E4BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,6 +168,8 @@
 			children = (
 				9FF0E5D71AB3710E0008B6BC /* ImgurGallery.h */,
 				9FF0E5D81AB3710E0008B6BC /* ImgurGallery.m */,
+				9F0BD05A1AB631B60072CD25 /* ImgurImage.h */,
+				9F0BD05B1AB631B60072CD25 /* ImgurImage.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FF0E5D91AB3710E0008B6BC /* ImgurGallery.m in Sources */,
+				9F0BD05C1AB631B60072CD25 /* ImgurImage.m in Sources */,
 				9F7F33881AB48C26005A87C6 /* PPJCollectionViewCell.m in Sources */,
 				9F5097D61AB348B60073E4BA /* SecondViewController.m in Sources */,
 				9F5097D01AB348B60073E4BA /* AppDelegate.m in Sources */,
@@ -326,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0BD05D1AB631B60072CD25 /* ImgurImage.m in Sources */,
 				9F5097EA1AB348B60073E4BA /* imgurTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
