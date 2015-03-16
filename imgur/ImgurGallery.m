@@ -27,6 +27,9 @@
     [manager GET:@"https://api.imgur.com/3/gallery/hot/viral/0.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         self.gallery = (NSDictionary *) responseObject;
+        if ([self.delegate respondsToSelector:@selector(imgurDidLoadNewJSON)]) {
+            [self.delegate imgurDidLoadNewJSON];
+        }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];

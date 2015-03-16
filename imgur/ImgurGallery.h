@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ImgurGalleryDelegate;
+
 @interface ImgurGallery : NSObject
 @property (nonatomic, strong) NSDictionary * gallery;
+@property (assign, nonatomic) id<ImgurGalleryDelegate> delegate;
 
 + (instancetype)sharedGallery;
 - (void) refreshGallery;
+
+@end
+
+@protocol ImgurGalleryDelegate <NSObject>
+
+- (void) imgurDidLoadNewJSON;
 
 @end

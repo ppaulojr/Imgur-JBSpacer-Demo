@@ -7,7 +7,6 @@
 //
 
 #import "FirstViewController.h"
-#import "ImgurGallery.h"
 #import "ImgurImage.h"
 #import "PPJCollectionViewCell.h"
 #import <JBSpacer.h>
@@ -34,11 +33,8 @@
     [spacer applySpacingToCollectionViewFlowLayout:self.flowLayout];
     
     [self.collectionView.collectionViewLayout invalidateLayout];
-    
+    [ImgurGallery sharedGallery].delegate = self;
     [[ImgurGallery sharedGallery] refreshGallery];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.collectionView reloadData];
-    });
 }
 
 
@@ -46,6 +42,13 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - ImgurGalleryDelegate
+
+- (void) imgurDidLoadNewJSON
+{
+    [self.collectionView reloadData];
 }
 
 
@@ -70,9 +73,7 @@
     [cell.cellImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"icon_683_1"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         if (error) {
             NSLog(@"Error Loading: %@ %@",imageURL, error);
-        } else {
-            NSLog(@"Completed: %@",imageURL);
-        }
+        } 
     }];
 
     return cell;

@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ImgurGallery.h"
 
-@interface FirstViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDataSource>
+
+@interface FirstViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDataSource, ImgurGalleryDelegate>
 
 
 @end
