@@ -44,6 +44,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    [self.collectionView.collectionViewLayout invalidateLayout];
+}
+
 #pragma mark - ImgurGalleryDelegate
 
 - (void) imgurDidLoadNewJSON
@@ -69,8 +74,8 @@
     NSArray * arr = [[ImgurGallery sharedGallery] gallery][@"data"];
 
     NSURL * url = [ImgurImage imageURLFromId:arr[indexPath.row][@"id"] withType:arr[indexPath.row][@"type"] andIsAlbum:[arr[indexPath.row][@"is_album"] integerValue] andCover:arr[indexPath.row][@"cover"] ];
-    
-    [cell.cellImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"icon_683_1"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+
+    [cell.cellImageView sd_setImageWithURL:url placeholderImage:[UIImage imageNamed:@"loading.gif"] completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         if (error) {
             NSLog(@"Error Loading: %@ %@",imageURL, error);
         } 

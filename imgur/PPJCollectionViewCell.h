@@ -10,5 +10,4 @@
 
 @interface PPJCollectionViewCell : UICollectionViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *cellImageView;
-
 @end

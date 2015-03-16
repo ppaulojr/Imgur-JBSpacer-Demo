@@ -18,8 +18,8 @@
 		9F5097DB1AB348B60073E4BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F5097DA1AB348B60073E4BA /* Images.xcassets */; };
 		9F5097DE1AB348B60073E4BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F5097DC1AB348B60073E4BA /* LaunchScreen.xib */; };
 		9F5097EA1AB348B60073E4BA /* imgurTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5097E91AB348B60073E4BA /* imgurTests.m */; };
+		9F62FF811AB76C1A0026C7C2 /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F62FF801AB76C1A0026C7C2 /* loading.gif */; };
 		9F7F33881AB48C26005A87C6 /* PPJCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7F33871AB48C26005A87C6 /* PPJCollectionViewCell.m */; };
-		9F7F338D1AB49192005A87C6 /* icon_683_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7F338C1AB49192005A87C6 /* icon_683_1.png */; };
 		9FF0E5D91AB3710E0008B6BC /* ImgurGallery.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0E5D81AB3710E0008B6BC /* ImgurGallery.m */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +53,9 @@
 		9F5097E31AB348B60073E4BA /* imgurTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imgurTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F5097E81AB348B60073E4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F5097E91AB348B60073E4BA /* imgurTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = imgurTests.m; sourceTree = "<group>"; };
+		9F62FF801AB76C1A0026C7C2 /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		9F7F33861AB48C26005A87C6 /* PPJCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPJCollectionViewCell.h; sourceTree = "<group>"; };
 		9F7F33871AB48C26005A87C6 /* PPJCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPJCollectionViewCell.m; sourceTree = "<group>"; };
-		9F7F338C1AB49192005A87C6 /* icon_683_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_683_1.png; sourceTree = "<group>"; };
 		9FF0E5D71AB3710E0008B6BC /* ImgurGallery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurGallery.h; sourceTree = "<group>"; };
 		9FF0E5D81AB3710E0008B6BC /* ImgurGallery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurGallery.m; sourceTree = "<group>"; };
 		BAF275630497C32B97C84826 /* Pods-imgur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imgur.release.xcconfig"; path = "Pods/Target Support Files/Pods-imgur/Pods-imgur.release.xcconfig"; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		9F5097CA1AB348B60073E4BA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9F7F338C1AB49192005A87C6 /* icon_683_1.png */,
+				9F62FF801AB76C1A0026C7C2 /* loading.gif */,
 				9F5097CB1AB348B60073E4BA /* Info.plist */,
 				9F5097CC1AB348B60073E4BA /* main.m */,
 			);
@@ -267,8 +267,8 @@
 			files = (
 				9F5097D91AB348B60073E4BA /* Main.storyboard in Resources */,
 				9F5097DE1AB348B60073E4BA /* LaunchScreen.xib in Resources */,
-				9F7F338D1AB49192005A87C6 /* icon_683_1.png in Resources */,
 				9F5097DB1AB348B60073E4BA /* Images.xcassets in Resources */,
+				9F62FF811AB76C1A0026C7C2 /* loading.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
